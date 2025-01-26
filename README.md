@@ -1,59 +1,47 @@
-# Splitealo
+# Splitealo Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+This is the frontend for **Splitealo**, a full-stack web application designed to simplify splitting food or other bills among friends. The frontend is built using Angular and Angular Material to provide a modern and responsive user experience.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Simple Bill Splitting**:
+  - Split bills equally among a group of friends.
+  - Customize splits based on individual consumption.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Receipt Generation**:
+  - Automatically generate detailed receipts for the split.
 
-## Code scaffolding
+- **Shareable Links**:
+  - Share receipts with friends using unique, database-backed links.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Tech Stack
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Angular**: For building a dynamic, interactive user interface.
+- **Angular Material**: For a responsive and modern UI design.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Setup Instructions
 
-To build the project run:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/nordiel/splitealo-frontend.git
+   cd splitealo-frontend
+2. Install dependencies
+   ```bash
+   npm install
+3. Start development server
+   ```bash
+   ng serve
+4. Open your browser and navigate to:
+   ```bash
+   http://localhost:3000/
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Goals
+- Enhance familiarity with Angular and Angular Material.
+- Build a dynamic and interactive user interface.
+- Integrate the frontend seamlessly with the backend API.

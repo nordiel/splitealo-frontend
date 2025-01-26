@@ -1,1 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Quicksand;
+  background-color: var(--main-color);
+}
+
+/* COLOR PALETTE */
+:root {
+  --highlight-color: #ff5666;
+  --main-color: #e8ebf7;
+  --vibrant-green: #4caf50;
+}
+
+.card {
+  margin: 24px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.currency-input {
+  text-align: auto;
+}
+
+.button {
+  color: var(--highlight-color);
+}
+
+input.currency-input::-webkit-outer-spin-button,
+input.currency-input::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.currency-input {
+  -moz-appearance: textfield;
+}
+
+.receipt {
+  font-family: Doto;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* White background for the receipt */
+  border: 1px solid #e0e0e0; /* Light grey border for a classic receipt style */
+}
+
+/* LANDING PAGE */
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px; /* Limit the width for better readability */
+  background: linear-gradient(
+    145deg,
+    #f5f7fa,
+    #e4ebf0
+  ); /* Subtle gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.landing-greeting {
+  font-size: 3rem; /* Large and bold for the main heading */
+  font-weight: bold;
+  color: var(--vibrant-green); /* Dark text for better readability */
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif; /* Modern font */
+}
+
+.landing-paragraph {
+  font-size: 1.2rem; /* Comfortable reading size */
+  line-height: 1.6; /* Add spacing between lines */
+  color: #555; /* Slightly muted text for better focus */
+  margin-top: 0;
+  font-family: "Roboto", sans-serif; /* Clean font for paragraphs */
+}
+
+.landing-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 15px 30px;
+  background-color: var(--vibrant-green);
+  color: white;
+  font-size: 1.2rem; /* Larger size for importance */
+  font-weight: bold; /* Emphasize the text */
+  border: none; /* Clean look */
+  border-radius: 25px; /* Rounded edges for modern feel */
+  cursor: pointer; /* Indicate interactivity */
+  text-transform: uppercase; /* Add emphasis */
+  transition: all 0.3s ease; /* Smooth hover effects */
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-btn:hover {
+  background-color: #45a049; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Subtle scaling effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for focus */
+}
+
+.landing-btn:active {
+  transform: scale(0.98); /* Press effect */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow on press */
+}
+
+.landing-btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Accessible focus ring */
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #cfcfcf;
+}
+
+.footer-link {
+  color: #76c7c0;
+  text-decoration: none;
+  font-weight: bold;
+}
